@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Herca | Torrent, Valencia · Desde 1966</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#131313",
+                    "error": "#ffb4ab",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#c8c6c5",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-secondary-container": "#bab8b7",
+                    "surface-container": "#1f2020",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-surface": "#e4e2e1",
+                    "inverse-surface": "#e4e2e1",
+                    "error-container": "#93000a",
+                    "surface-container-low": "#1b1c1c",
+                    "primary": "#e3c19f",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "tertiary": "#c6c6c7",
+                    "on-primary": "#412c14",
+                    "on-error": "#690005",
+                    "on-tertiary-container": "#3d3f3f",
+                    "surface-tint": "#e3c19f",
+                    "on-secondary-fixed-variant": "#474646",
+                    "primary-fixed-dim": "#e3c19f",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-variant": "#353535",
+                    "on-surface-variant": "#d2c4b9",
+                    "primary-fixed": "#ffddbb",
+                    "on-primary-container": "#503a21",
+                    "on-primary-fixed-variant": "#5a4229",
+                    "surface-bright": "#393939",
+                    "inverse-on-surface": "#303030",
+                    "outline": "#9b8f84",
+                    "secondary-fixed": "#e5e2e1",
+                    "tertiary-container": "#a9aaaa",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-background": "#e4e2e1",
+                    "surface": "#131313",
+                    "secondary-container": "#4a4949",
+                    "inverse-primary": "#735a3e",
+                    "primary-container": "#c4a484",
+                    "on-secondary": "#313030",
+                    "outline-variant": "#4e453d",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-tertiary": "#2f3131",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-highest": "#353535",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#291803"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "section-padding": "80px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Syne"],
+                    "body-md": ["Hanken Grotesk"],
+                    "display-lg": ["Syne"],
+                    "headline-lg-mobile": ["Syne"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Syne"],
+                    "label-sm": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .award-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.5s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+        .award-card.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .award-card:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 8px 36px rgba(227,193,159,0.18), 0 0 0 1px rgba(227,193,159,0.25);
+            border-color: rgba(227,193,159,0.3) !important;
+        }
+        .award-icon {
+            background: linear-gradient(135deg, #f5e6c8, #e3c19f, #c9a87c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px #e3c19f;
+            color: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #131313;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #353535;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e3c19f;
+        }
+        @keyframes gallery-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .gallery-marquee {
+            animation: gallery-scroll 40s linear infinite;
+        }
+        .gallery-marquee:hover {
+            animation-play-state: paused;
+        }
+        .stack-card {
+            background: #131313;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            position: relative;
+            transition: border-color 0.5s ease, box-shadow 0.5s ease;
+        }
+        .stack-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(227,193,159,0.13) 0%, rgba(227,193,159,0.04) 60%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .stack-card.active::before {
+            opacity: 1;
+        }
+        .stack-card > div {
+            position: relative;
+            z-index: 1;
+        }
+        .stack-card.active {
+            border-top-color: rgba(227,193,159,0.65);
+            box-shadow: 0 -2px 0 rgba(227,193,159,0.35), inset 0 0 80px rgba(227,193,159,0.05);
+        }
+        .stack-card.active .stack-num { color: rgba(227,193,159,0.8); }
+        .stack-card.active .stack-title { color: #e3c19f; }
+        .stack-card.active .stack-icon { color: rgba(227,193,159,0.65); }
+        .gallery-item {
+            border: 1px solid transparent;
+            transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.35s ease;
+        }
+        .gallery-item:hover {
+            border-color: rgba(227,193,159,0.55);
+            box-shadow: 0 0 32px rgba(227,193,159,0.28), inset 0 0 40px rgba(227,193,159,0.08);
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            transition: transform 0.7s ease, filter 0.4s ease;
+            filter: brightness(0.42);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.07);
+            filter: brightness(0.58);
+        }
+        .gallery-overlay {
+            opacity: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.25) 55%, transparent 100%);
+            transition: opacity 0.4s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .map-overlay {
+            background: rgba(0,0,0,0.1);
+            transition: background 0.3s ease;
+        }
+        .map-overlay:hover {
+            background: rgba(0,0,0,0.35);
+        }
+        .map-pill {
+            background: rgba(19,19,19,0);
+            border: 1px solid rgba(227,193,159,0);
+            backdrop-filter: blur(0px);
+            transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        .map-overlay:hover .map-pill {
+            background: rgba(19,19,19,0.88);
+            border-color: rgba(227,193,159,0.45);
+            backdrop-filter: blur(8px);
+        }
+        .map-pill .map-icon,
+        .map-pill .map-label {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .map-overlay:hover .map-pill .map-icon,
+        .map-overlay:hover .map-pill .map-label {
+            opacity: 1;
+        }
+        .review-card {
+            cursor: pointer;
+            transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.35s ease;
+        }
+        .review-card:hover {
+            border-color: rgba(227,193,159,0.45) !important;
+            box-shadow: 0 0 28px rgba(227,193,159,0.22), inset 0 0 36px rgba(227,193,159,0.07);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<script>
+history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+    const pos = sessionStorage.getItem('scrollPos');
+    if (pos) {
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                window.scrollTo(0, parseInt(pos));
+            });
+        });
+    }
+});
+window.addEventListener('scroll', () => {
+    sessionStorage.setItem('scrollPos', window.scrollY);
+}, { passive: true });
+</script>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+  <img src="imagenes/EC767D47-5102-4137-B2DA-C1034C531AA3.PNG" alt="Logo Herca" style="height:56px; width:auto; mix-blend-mode:screen;"/>
+  <div class="flex flex-col leading-none">
+    <span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Herca</span>
+    <span style="font-size:9px; letter-spacing:0.14em; color:#e3c19f; font-family:'Hanken Grotesk',sans-serif; font-weight:400; text-transform:uppercase; margin-top:3px;">Club Deportivo</span>
+  </div>
+</div>
+<div class="hidden md:flex items-center gap-8">
+  <a class="nav-link font-body-md transition-colors duration-200 pb-1" style="color:#ffffff; border-bottom:2px solid transparent;" href="#historia" onclick="event.preventDefault(); document.getElementById('historia').scrollIntoView({behavior:'smooth'});">Historia</a>
+  <a class="nav-link font-body-md transition-colors duration-200 pb-1" style="color:#ffffff; border-bottom:2px solid transparent;" href="#instalaciones" onclick="event.preventDefault(); document.getElementById('instalaciones').scrollIntoView({behavior:'smooth'});">Instalaciones</a>
+  <a class="nav-link font-body-md transition-colors duration-200 pb-1" style="color:#ffffff; border-bottom:2px solid transparent;" href="#actividades" onclick="event.preventDefault(); document.getElementById('actividades').scrollIntoView({behavior:'smooth'});">Actividades</a>
+  <a class="nav-link font-body-md transition-colors duration-200 pb-1" style="color:#ffffff; border-bottom:2px solid transparent;" href="#resenas" onclick="event.preventDefault(); document.getElementById('resenas').scrollIntoView({behavior:'smooth'});">Reseñas</a>
+  <a class="nav-link font-body-md transition-colors duration-200 pb-1" style="color:#ffffff; border-bottom:2px solid transparent;" href="#contacto" onclick="event.preventDefault(); document.getElementById('contacto').scrollIntoView({behavior:'smooth'});">Contacto</a>
+</div>
+<a id="nav-cta" href="#contacto" onclick="event.preventDefault(); document.getElementById('contacto').scrollIntoView({behavior:'smooth'});" class="px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest rounded-full hover:scale-105 transition-transform duration-300" style="background: linear-gradient(135deg, rgba(255,225,180,0.95), rgba(196,164,132,0.8), rgba(255,225,180,0.95)); color:#2a1200; box-shadow: 0 0 18px rgba(227,193,159,0.4);">
+  Prueba Gratuita
+</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Entrada iluminada del gimnasio Herca, Torrent" class="w-full h-full object-cover" style="object-position: center 70%;" src="imagenes/hf_20260517_124743_dbdbc36d-3215-4cd2-b83d-c8d6c3ff63a3.png"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background/80 via-transparent to-background"></div>
+</div>
+<!-- Badge encima del cartel -->
+<div class="absolute top-0 left-0 right-0 z-10 flex flex-col items-center justify-end pb-10" style="height: 38%;">
+<div class="flex items-center gap-3 px-6 py-2 rounded-full" style="background: linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, rgba(255,225,180,0.95), rgba(196,164,132,0.5), rgba(255,225,180,0.95)) border-box; border: 1px solid transparent; box-shadow: 0 0 18px rgba(227,193,159,0.4);">
+<span class="text-white uppercase tracking-widest" style="font-size: 9px;">Desde 1966</span>
+<span class="text-white/30" style="font-size: 10px;">·</span>
+<div class="flex items-center gap-px text-white">
+<span class="material-symbols-outlined" style="font-size:11px; font-variation-settings:'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size:11px; font-variation-settings:'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size:11px; font-variation-settings:'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size:11px; font-variation-settings:'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size:11px; font-variation-settings:'FILL' 1;">star_half</span>
+</div>
+<span class="text-white/30" style="font-size: 10px;">·</span>
+<a href="#" onclick="event.preventDefault(); document.getElementById('resenas').scrollIntoView({behavior:'smooth'});" class="text-white uppercase tracking-widest hover:text-primary transition-colors" style="font-size: 9px;">+183 reseñas</a>
+</div>
+</div>
+<!-- Subtítulo + CTAs - parte inferior -->
+<div class="absolute bottom-0 left-0 right-0 z-10 flex flex-col items-center justify-start pt-8 pb-16 px-gutter text-center" style="height: 40%;">
+<p class="font-body-lg text-body-lg text-white mb-8 max-w-2xl">
+                La excelencia deportiva grabada en el ADN de Torrent. Un legado de disciplina, técnica y éxito olímpico.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button onclick="document.getElementById('instalaciones').scrollIntoView({behavior:'smooth'})" class="px-10 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:scale-105 transition-transform" style="background: linear-gradient(135deg, rgba(255,225,180,0.95), rgba(196,164,132,0.8), rgba(255,225,180,0.95)); border: 1px solid transparent; box-shadow: 0 0 18px rgba(227,193,159,0.4); color: #2a1200;">
+                    Descubre el Club
+                </button>
+<button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="border border-white/50 text-white px-10 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-white hover:text-background transition-all">
+                    Ver Horarios
+                </button>
+</div>
+</div>
+<!-- Scroll indicator -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
+<span class="font-label-sm text-label-sm text-outline-variant uppercase">Scroll</span>
+<div class="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Historia Section -->
+<section id="historia" class="bg-background text-on-surface py-section-padding px-gutter">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="space-y-10">
+<!-- Texto -->
+<div class="space-y-6">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Desde 1966</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Una Leyenda de Torrent</h2>
+<p class="font-body-lg text-body-lg text-white leading-relaxed">
+Herca no es un gimnasio más. Es la institución deportiva que puso a Torrent en el mapa del olimpismo mundial. Seis décadas forjando campeones, construyendo carácter y devolviendo medallas a nuestra ciudad.
+</p>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-2 gap-6">
+<div class="border-l-2 border-primary pl-4">
+<div class="font-bold text-on-surface" style="font-family: Syne; font-size: 42px; line-height:1; color: #ffffff;">60+</div>
+<div class="text-xs uppercase tracking-widest mt-1" style="color: #e3c19f;">Años de historia</div>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<div class="font-bold text-on-surface" style="font-family: Syne; font-size: 42px; line-height:1; color: #ffffff;">15+</div>
+<div class="text-xs uppercase tracking-widest mt-1" style="color: #e3c19f;">Atletas olímpicos</div>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<div class="font-bold text-on-surface" style="font-family: Syne; font-size: 42px; line-height:1; color: #ffffff;">200+</div>
+<div class="text-xs uppercase tracking-widest mt-1" style="color: #e3c19f;">Medallas nacionales</div>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<div class="font-bold text-on-surface" style="font-family: Syne; font-size: 42px; line-height:1; color: #ffffff;">1.200</div>
+<div class="text-xs uppercase tracking-widest mt-1" style="color: #e3c19f;">m² de instalaciones</div>
+</div>
+</div>
+<!-- Reconocimientos -->
+<div class="pt-4 border-t border-outline-variant">
+<p class="text-xs uppercase tracking-widest text-white mb-5 pt-4">Reconocimientos Oficiales</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+
+<div class="award-card p-5 rounded-lg border border-outline-variant/40 cursor-default" style="background:#1a1a1a;" data-delay="0">
+<span class="mb-3 block" style="font-size:32px;">🏆</span>
+<p class="uppercase tracking-widest mb-1" style="font-size:9px; color:#c9a87c;">Comité Olímpico Español</p>
+<p class="text-white font-semibold leading-snug" style="font-size:12px; letter-spacing:0.04em;">Mejor Club de España de Judo</p>
+</div>
+
+<div class="award-card p-5 rounded-lg border border-outline-variant/40 cursor-default" style="background:#1a1a1a;" data-delay="100">
+<span class="mb-3 block" style="font-size:32px;">🥇</span>
+<p class="uppercase tracking-widest mb-1" style="font-size:9px; color:#c9a87c;">Ajuntament de Torrent</p>
+<p class="text-white font-semibold leading-snug" style="font-size:12px; letter-spacing:0.04em;">Insignia de Oro de la Ciutat</p>
+</div>
+
+<div class="award-card p-5 rounded-lg border border-outline-variant/40 cursor-default" style="background:#1a1a1a;" data-delay="200">
+<span class="mb-3 block" style="font-size:32px;">🎖️</span>
+<p class="uppercase tracking-widest mb-1" style="font-size:9px; color:#c9a87c;">Generalitat Valenciana</p>
+<p class="text-white font-semibold leading-snug" style="font-size:12px; letter-spacing:0.04em;">Placa al Mérito Deportivo</p>
+</div>
+
+<div class="award-card p-5 rounded-lg border border-outline-variant/40 cursor-default" style="background:#1a1a1a;" data-delay="300">
+<span class="mb-3 block" style="font-size:32px;">🔥</span>
+<p class="uppercase tracking-widest mb-1" style="font-size:9px; color:#c9a87c;">Juegos Olímpicos</p>
+<p class="text-white font-semibold leading-snug" style="font-size:12px; letter-spacing:0.04em;">Antorcha Olímpica · Barcelona 1992</p>
+</div>
+
+<div class="award-card p-5 rounded-lg border border-outline-variant/40 cursor-default" style="background:#1a1a1a;" data-delay="400">
+<span class="mb-3 block" style="font-size:32px;">🥈</span>
+<p class="uppercase tracking-widest mb-1" style="font-size:9px; color:#c9a87c;">Consejo Superior de Deportes</p>
+<p class="text-white font-semibold leading-snug" style="font-size:12px; letter-spacing:0.04em;">Medalla de Plata</p>
+</div>
+
+</div>
+</div>
+</div>
+<div class="relative aspect-square">
+<div class="absolute inset-0 border-[12px] border-primary translate-x-6 translate-y-6"></div>
+<img class="relative z-10 w-full h-full object-cover" alt="Recepción y vitrinas de trofeos del gimnasio Herca, Torrent" src="imagenes/hf_20260517_133303_124fa0ee-c1b6-48de-9220-b15cc6ba6518.png"/>
+</div>
+</div>
+</section>
+<!-- Instalaciones Section (Bento Grid) -->
+<section id="instalaciones" class="bg-background py-section-padding px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block">Instalaciones Reales</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">1.200 m² para tu entrenamiento</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                    Diseñadas para el alto rendimiento y el confort absoluto. Espacios amplios que integran luz natural y tecnología deportiva.
+                </p>
+</div>
+<!-- Galería marquee: scroll continuo con todas las instalaciones -->
+<div class="relative -mx-gutter py-4" style="overflow-x: hidden; -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent); mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);">
+  <div id="gallery-track" class="gallery-marquee flex gap-3" style="width: max-content;">
+    <!-- Primera pasada -->
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:310px; height:400px;">
+      <img alt="Sala de musculación Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_141150_60dd8b92-ae08-459a-9d3b-6bb38d2ca8c9.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Sala de Musculación</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Más de 1.200 m² con maquinaria Panatta, Etenon y Matrix</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:260px; height:400px;">
+      <img alt="Piscina cubierta Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140933_b9f7e149-5732-491c-b9b0-dff0575eee07.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Piscina Cubierta</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Natación libre y clases para todos los niveles</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:280px; height:400px;">
+      <img alt="Ciclo indoor Herca" class="w-full h-full object-cover" src="imagenes/a6c98105-e069-4a41-a791-34ea9713c3f1.jpg"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Ciclo Indoor</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Bicicletas profesionales con instructor certificado</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:270px; height:400px;">
+      <img alt="Pilates y stretching Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_141312_e33ef887-c9c3-4302-a3b5-c31751ee602e.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Pilates & Stretching</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Clases dirigidas por profesionales cualificados</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:260px; height:400px;">
+      <img alt="Zona fitness Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140741_bd74fb3c-ed96-4c0f-95bb-d68f3683943b.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Zona Fitness</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Mancuernas y equipamiento de alta gama sin esperas</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:290px; height:400px;">
+      <img alt="Entrenamiento exterior Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140542_b5d4e70c-2405-42ba-a109-bffffc240b28.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Entrenamiento Exterior</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Zona outdoor funcional para entrenamientos grupales</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:270px; height:400px;">
+      <img alt="Pista polideportiva Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140838_8ee59c6e-daef-44ba-b504-113f81d434eb.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Pista Polideportiva</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Baloncesto, fútbol sala y deportes de equipo</p>
+      </div>
+    </div>
+    <!-- Segunda pasada (bucle infinito) -->
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:310px; height:400px;">
+      <img alt="Sala de musculación Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_141150_60dd8b92-ae08-459a-9d3b-6bb38d2ca8c9.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Sala de Musculación</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Más de 1.200 m² con maquinaria Panatta, Etenon y Matrix</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:260px; height:400px;">
+      <img alt="Piscina cubierta Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140933_b9f7e149-5732-491c-b9b0-dff0575eee07.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Piscina Cubierta</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Natación libre y clases para todos los niveles</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:280px; height:400px;">
+      <img alt="Ciclo indoor Herca" class="w-full h-full object-cover" src="imagenes/a6c98105-e069-4a41-a791-34ea9713c3f1.jpg"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Ciclo Indoor</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Bicicletas profesionales con instructor certificado</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:270px; height:400px;">
+      <img alt="Pilates y stretching Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_141312_e33ef887-c9c3-4302-a3b5-c31751ee602e.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Pilates & Stretching</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Clases dirigidas por profesionales cualificados</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:260px; height:400px;">
+      <img alt="Zona fitness Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140741_bd74fb3c-ed96-4c0f-95bb-d68f3683943b.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Zona Fitness</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Mancuernas y equipamiento de alta gama sin esperas</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:290px; height:400px;">
+      <img alt="Entrenamiento exterior Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140542_b5d4e70c-2405-42ba-a109-bffffc240b28.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Entrenamiento Exterior</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Zona outdoor funcional para entrenamientos grupales</p>
+      </div>
+    </div>
+    <div class="gallery-item relative overflow-hidden rounded-sm flex-shrink-0" style="width:270px; height:400px;">
+      <img alt="Pista polideportiva Herca" class="w-full h-full object-cover" src="imagenes/hf_20260517_140838_8ee59c6e-daef-44ba-b504-113f81d434eb.png"/>
+      <div class="gallery-overlay absolute inset-0 flex flex-col justify-end p-5">
+        <p style="color:#e3c19f; font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:4px;">Pista Polideportiva</p>
+        <p class="text-white/70" style="font-size:11px; line-height:1.5;">Baloncesto, fútbol sala y deportes de equipo</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Hint arrastra -->
+<div class="flex items-center justify-center gap-2 mt-5">
+  <span class="material-symbols-outlined" style="font-size:15px; color:rgba(227,193,159,0.35);">swipe</span>
+  <span style="font-size:10px; color:rgba(227,193,159,0.35); letter-spacing:0.12em; text-transform:uppercase; font-family:'Syne',sans-serif;">Arrastra para explorar</span>
+</div>
+</div>
+</section>
+<!-- Actividades Section -->
+<section id="actividades" class="bg-background text-on-surface py-section-padding px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg mb-4" style="padding-bottom: 3px; overflow: visible;">Actividades para Todos</h2>
+<div class="w-20 h-1 bg-primary-container mx-auto"></div>
+</div>
+<div id="programs-stack">
+
+  <div class="stack-card" data-sticky-top="80" style="position:sticky; top:80px; z-index:10; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">01</span>
+      <div class="text-2xl mb-2">💪</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Fitness</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Más de 1.200 m² de maquinaria profesional Panatta, Etenon y Matrix. Acceso libre sin reserva previa, zona de pesas libres, cardiovascular y musculación. Entrenadores disponibles para orientarte en cada sesión.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="88" style="position:sticky; top:88px; z-index:11; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">02</span>
+      <div class="text-2xl mb-2">🏊</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Natación</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Piscina climatizada todo el año con grupos de iniciación, intermedio y perfeccionamiento. Clases para niños y adultos con instructores titulados. Cursos intensivos en verano para avanzar rápido.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="96" style="position:sticky; top:96px; z-index:12; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">03</span>
+      <div class="text-2xl mb-2">🥋</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Judo</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Reconocidos por el Comité Olímpico Español como el mejor club del país. Más de 50 años de historia y excelencia en artes marciales. Grupos desde niños de 4 años hasta adultos de alto nivel competitivo.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="104" style="position:sticky; top:104px; z-index:13; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">04</span>
+      <div class="text-2xl mb-2">🎶</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Clases Dirigidas</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Zumba, Pilates, aeróbic, step y mucho más. Clases grupales con instructores especializados que te motivarán en cada sesión. Horarios flexibles mañana y tarde. Reserva previa al 96 155 31 31.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="112" style="position:sticky; top:112px; z-index:14; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">05</span>
+      <div class="text-2xl mb-2">🚴</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Ciclo Indoor</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Sala específica de spinning con bicicletas estáticas profesionales. Clases de alta energía con música y guía de instructor certificado. Mejora tu resistencia cardiovascular y quema calorías de forma efectiva.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="120" style="position:sticky; top:120px; z-index:15; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">06</span>
+      <div class="text-2xl mb-2">👶</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Infantil</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Judo infantil, natación para bebés y niños, y actividades adaptadas a cada edad. Monitores especializados en deporte infantil. Escuela de verano incluida en julio y agosto para que los peques disfruten activos.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="128" style="position:sticky; top:128px; z-index:16; margin-bottom:110px;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">07</span>
+      <div class="text-2xl mb-2">🎯</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Entreno Personal</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Programas completamente individualizados con entrenadores personales cualificados. Seguimiento semanal de tu progreso, ajuste continuo del plan y orientación nutricional para alcanzar resultados concretos.</p>
+    </div>
+  </div>
+
+  <div class="stack-card" data-sticky-top="136" style="position:sticky; top:136px; z-index:17;">
+    <div class="py-5 px-6 text-center max-w-xl mx-auto">
+      <span class="stack-num block font-semibold tracking-widest uppercase mb-2" style="color:rgba(227,193,159,0.4); font-size:10px; font-family:'Syne',sans-serif; transition:color .5s;">08</span>
+      <div class="text-2xl mb-2">⚡</div>
+      <h3 class="stack-title text-on-surface mb-2" style="font-size:clamp(17px,2vw,22px); font-weight:600; font-family:'Syne',sans-serif; transition:color .5s; margin-top:6px;">Cross Training</h3>
+      <p class="text-on-surface-variant leading-relaxed" style="font-size:14px; max-width:460px; margin:0 auto; margin-top:10px;">Entrenamiento funcional de alta intensidad en nuestra zona exterior. Combinamos fuerza, resistencia y agilidad en sesiones grupales con instructor. Cada sesión es un reto diferente para que nunca te acomodes.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="flex flex-col items-center justify-center text-center" style="padding-top: 80px; padding-bottom: 20px;">
+  <!-- Separador visual -->
+  <div class="flex items-center gap-4 mb-12 w-full max-w-xs">
+    <div class="flex-1 h-px" style="background: linear-gradient(to right, transparent, rgba(227,193,159,0.4));"></div>
+    <span style="color:rgba(227,193,159,0.6); font-size:16px;">✦</span>
+    <div class="flex-1 h-px" style="background: linear-gradient(to left, transparent, rgba(227,193,159,0.4));"></div>
+  </div>
+  <p class="text-white mb-3" style="font-size:16px; letter-spacing:0.08em; text-transform:uppercase; font-weight:600; font-family:'Syne',sans-serif;">Sin permanencia · Sin compromiso</p>
+  <p class="text-on-surface-variant mb-10" style="font-size:13px; max-width:360px; line-height:1.7;">Más de 60 años llevamos cambiando vidas en Torrent. La tuya puede ser la siguiente.</p>
+  <a href="#contacto" onclick="event.preventDefault(); document.getElementById('contacto').scrollIntoView({behavior:'smooth'});"
+     class="px-10 py-4 rounded-full font-semibold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-105"
+     style="background: linear-gradient(135deg, rgba(255,225,180,0.95), rgba(196,164,132,0.8), rgba(255,225,180,0.95)); color:#2a1200; box-shadow: 0 0 28px rgba(227,193,159,0.35);">
+    Solicitar mi prueba gratuita
+  </a>
+</div>
+
+</div>
+</section>
+<!-- Opiniones Section -->
+<section id="resenas" class="bg-background py-section-padding overflow-hidden">
+  <div class="max-w-container-max mx-auto px-gutter">
+
+    <!-- Cabecera -->
+    <div class="text-center mb-16">
+      <span class="text-primary uppercase tracking-widest block mb-4" style="font-size:11px; letter-spacing:0.12em;">Comunidad Herca · Torrent</span>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface mb-10">Lo que dicen nuestros socios</h2>
+
+      <!-- Rating Google -->
+      <div class="inline-flex items-center gap-6 px-8 py-5 rounded-2xl" style="background:#1a1a1a; border:1px solid rgba(227,193,159,0.2);">
+        <div class="text-right">
+          <p class="font-bold" style="font-size:52px; line-height:1; color:#e3c19f; font-family:'Syne',sans-serif;">4.6</p>
+          <div class="flex gap-px mt-1">
+            <span class="material-symbols-outlined" style="font-size:16px; color:#e3c19f; font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined" style="font-size:16px; color:#e3c19f; font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined" style="font-size:16px; color:#e3c19f; font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined" style="font-size:16px; color:#e3c19f; font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined" style="font-size:16px; color:#e3c19f; font-variation-settings:'FILL' 1;">star_half</span>
+          </div>
+        </div>
+        <div class="w-px h-12" style="background:rgba(227,193,159,0.2);"></div>
+        <div class="text-left">
+          <p class="text-white font-semibold" style="font-size:15px;">183 reseñas</p>
+          <p class="text-on-surface-variant" style="font-size:12px; margin-top:2px;">Valoración en Google</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marquee reseñas -->
+  <div class="relative" style="overflow-x:hidden; padding: 10px 0; -webkit-mask-image:linear-gradient(to right,transparent,black 6%,black 94%,transparent); mask-image:linear-gradient(to right,transparent,black 6%,black 94%,transparent);">
+    <div id="reviews-track" class="flex gap-4 gallery-marquee" style="width:max-content; animation-duration:65s;">
+
+      <!-- Primera pasada -->
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:300px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Es sin lugar a dudas el mejor lugar para entrenar en Torrent. Gimnasio de toda la vida, donde los monitores te ayudan y te corrigen. Un sitio único."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">J</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Juan Abad Chacón</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:320px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Deja de leer más reseñas, deja de mirar más gimnasios. Años de trabajo y dedicación, trato personalizado y cercano. Ves y prueba. 💪"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">C</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Carlos Sanz Fargallo</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:290px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Es más que un gimnasio, es nuestra segunda casa. Totalmente equipado con maquinaria de la buena: Panatta, Etenon, Matrix. No es como los gimnasios de las grandes cadenas."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">P</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Paco "Pacman"</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:300px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Herca es un centro deportivo muy familiar, con monitores muy cercanos y profesionales donde se nota que tienen mucha energía, ganas de ayudar y pasión por el deporte."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">S</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Sara</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:310px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Llevo muchos años en Herca y me siento como en casa. Gimnasio familiar donde cuidan a sus clientes tanto pequeños como adultos. Maquinaria en perfecto estado, siempre revisada."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">R</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Rafa Vargas</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:290px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Me apunté hace dos años y no me equivoqué. La sala siempre está ordenada, las clases son geniales y el personal es mejor todavía. Siempre atentos a lo que necesitas."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">P</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Patricia López</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:280px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Personal muy amable! Ambiente agradable y limpio. 100% recomendable."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">D</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Daniele Lima</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:310px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Me apunté con un amigo y estuve entrenando 3 años, luego lo dejé y he vuelto ahora. Siguen con el mismo trato excelente. Muy atentos y amables."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">I</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">ICANROD</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:300px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Gimnasio familiar, agradable y siempre en progresión. Nuevas máquinas, muy espacioso, múltiples clases con horarios mañana y tarde. Y escuela de verano para niños."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">A</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Alba Ojeda</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:290px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3">
+          <span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Un gimnasio de 10 tanto por los monitores como por las chicas de recepción. Siempre dispuestos a ayudar en todo lo que necesitas."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">J</div>
+          <div><p class="text-white font-semibold" style="font-size:12px;">Jose Enrique González</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div>
+        </div>
+      </div>
+
+      <!-- Segunda pasada (bucle) -->
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:300px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Es sin lugar a dudas el mejor lugar para entrenar en Torrent. Gimnasio de toda la vida, donde los monitores te ayudan y te corrigen. Un sitio único."</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">J</div><div><p class="text-white font-semibold" style="font-size:12px;">Juan Abad Chacón</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:320px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Deja de leer más reseñas, deja de mirar más gimnasios. Años de trabajo y dedicación, trato personalizado y cercano. Ves y prueba. 💪"</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">C</div><div><p class="text-white font-semibold" style="font-size:12px;">Carlos Sanz Fargallo</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:290px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Es más que un gimnasio, es nuestra segunda casa. Totalmente equipado con maquinaria de la buena: Panatta, Etenon, Matrix. No es como los gimnasios de las grandes cadenas."</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">P</div><div><p class="text-white font-semibold" style="font-size:12px;">Paco "Pacman"</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:300px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Herca es un centro deportivo muy familiar, con monitores muy cercanos y profesionales donde se nota que tienen mucha energía, ganas de ayudar y pasión por el deporte."</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">S</div><div><p class="text-white font-semibold" style="font-size:12px;">Sara</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:310px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Llevo muchos años en Herca y me siento como en casa. Gimnasio familiar donde cuidan a sus clientes tanto pequeños como adultos. Maquinaria en perfecto estado."</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">R</div><div><p class="text-white font-semibold" style="font-size:12px;">Rafa Vargas</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:290px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Me apunté hace dos años y no me equivoqué. La sala siempre está ordenada, las clases son geniales y el personal es mejor todavía."</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">P</div><div><p class="text-white font-semibold" style="font-size:12px;">Patricia López</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+      <div class="flex-shrink-0 rounded-lg p-6" style="width:300px; background:#1a1a1a; border:1px solid rgba(255,255,255,0.07);">
+        <div class="flex gap-px mb-3"><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size:14px;color:#e3c19f;font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="text-white/80 leading-relaxed mb-5" style="font-size:13px;">"Gimnasio familiar, agradable y siempre en progresión. Nuevas máquinas, muy espacioso, múltiples clases con horarios mañana y tarde. Y escuela de verano para niños."</p>
+        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style="background:rgba(227,193,159,0.15);color:#e3c19f;">A</div><div><p class="text-white font-semibold" style="font-size:12px;">Alba Ojeda</p><p style="font-size:10px;color:rgba(227,193,159,0.5);">Google · 5/5</p></div></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Hint arrastra reseñas -->
+  <div class="flex items-center justify-center gap-2 mt-5">
+    <span class="material-symbols-outlined" style="font-size:15px; color:rgba(227,193,159,0.35);">swipe</span>
+    <span style="font-size:10px; color:rgba(227,193,159,0.35); letter-spacing:0.12em; text-transform:uppercase; font-family:'Syne',sans-serif;">Arrastra para explorar</span>
+  </div>
+</section>
+<!-- Contacto Section -->
+<section id="contacto" class="bg-background text-on-surface py-section-padding px-gutter">
+<div class="max-w-container-max mx-auto">
+
+  <!-- Cabecera editorial -->
+  <div class="mb-20">
+    <span class="text-primary uppercase tracking-widest block mb-5" style="font-size:11px; letter-spacing:0.14em;">Empieza hoy</span>
+    <h2 class="font-headline-lg text-headline-lg text-on-surface" style="max-width:480px;">Contáctanos</h2>
+  </div>
+
+  <!-- Grid: Formulario | Separador | Info -->
+  <div class="grid lg:grid-cols-[1fr_1px_400px] gap-0 items-start">
+
+    <!-- Columna izquierda: Formulario -->
+    <div class="lg:pr-20">
+      <p class="text-on-surface-variant mb-10" style="font-size:14px; line-height:1.8;">Rellena el formulario y un asesor deportivo se pondrá en contacto contigo en menos de 24 horas.</p>
+      <form class="space-y-8">
+        <div class="border-b border-outline-variant focus-within:border-primary transition-colors py-2">
+          <label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Nombre</label>
+          <input class="w-full bg-transparent border-none p-0 focus:ring-0 text-body-md" placeholder="Tu nombre completo" type="text"/>
+        </div>
+        <div class="border-b border-outline-variant focus-within:border-primary transition-colors py-2">
+          <label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Teléfono</label>
+          <input class="w-full bg-transparent border-none p-0 focus:ring-0 text-body-md" placeholder="6XX XXX XXX" type="tel"/>
+        </div>
+        <div class="border-b border-outline-variant focus-within:border-primary transition-colors py-2">
+          <label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Email</label>
+          <input class="w-full bg-transparent border-none p-0 focus:ring-0 text-body-md" placeholder="email@ejemplo.com" type="email"/>
+        </div>
+        <div class="border-b border-outline-variant focus-within:border-primary transition-colors py-2">
+          <label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Actividad de Interés</label>
+          <select class="w-full bg-transparent border-none p-0 focus:ring-0 text-body-md" style="background:#131313; color:#e4e2e1;">
+            <option value="">Selecciona una actividad…</option>
+            <option>Fitness</option>
+            <option>Natación</option>
+            <option>Judo</option>
+            <option>Clases Dirigidas</option>
+            <option>Ciclo Indoor</option>
+            <option>Infantil</option>
+            <option>Entrenamiento Personal</option>
+            <option>Cross Training</option>
+          </select>
+        </div>
+        <div class="border-b border-outline-variant focus-within:border-primary transition-colors py-2">
+          <label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Mensaje</label>
+          <textarea class="w-full bg-transparent border-none p-0 focus:ring-0 text-body-md resize-none" placeholder="¿En qué podemos ayudarte?" rows="3"></textarea>
+        </div>
+        <button class="w-full py-5 font-label-sm text-label-sm uppercase tracking-[0.3em] rounded-full transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, rgba(255,225,180,0.95), rgba(196,164,132,0.8), rgba(255,225,180,0.95)); box-shadow: 0 0 24px rgba(227,193,159,0.35); color:#2a1200;">
+          Solicitar mi prueba gratuita
+        </button>
+      </form>
+    </div>
+
+    <!-- Separador vertical -->
+    <div class="hidden lg:block self-stretch" style="background: rgba(255,255,255,0.07);"></div>
+
+    <!-- Columna derecha: Mapa + Info -->
+    <div class="lg:pl-20 mt-16 lg:mt-0">
+
+      <!-- Mini mapa clicable -->
+      <div class="relative rounded-sm overflow-hidden mb-8" style="height:230px; border:1px solid rgba(227,193,159,0.15);">
+        <iframe
+          src="https://maps.google.com/maps?q=Gimnasio+Herca+Torrent+Valencia&output=embed&z=16"
+          width="100%" height="100%"
+          style="border:0;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!-- Capa oscura permanente -->
+        <div class="absolute inset-0 pointer-events-none" style="background:rgba(0,0,0,0.38);"></div>
+        <!-- Overlay clicable -->
+        <a href="https://maps.google.com/?q=Club+Deportivo+Herca,+C%2F+Benem%C3%A8rita+Gu%C3%A0rdia+Civil+19,+Torrent,+Valencia"
+           target="_blank" rel="noopener noreferrer"
+           class="map-overlay absolute inset-0 flex items-center justify-center">
+          <div class="map-pill flex items-center gap-2 px-5 py-3 rounded-full">
+            <span class="map-icon material-symbols-outlined" style="color:#e3c19f; font-size:18px;">navigation</span>
+            <span class="map-label" style="color:#e3c19f; font-size:11px; font-family:'Syne',sans-serif; letter-spacing:0.1em; text-transform:uppercase;">Cómo llegar</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Dirección + Horario -->
+      <div class="grid grid-cols-2 gap-6 pb-8 mb-8" style="border-bottom:1px solid rgba(255,255,255,0.07);">
+        <div>
+          <p class="uppercase tracking-widest mb-4" style="font-size:11px; color:#e3c19f; letter-spacing:0.13em;">Dirección</p>
+          <p class="text-on-surface-variant" style="font-size:15px; line-height:1.75;">C/ Benemèrita<br/>Guàrdia Civil, 19<br/>46900 Torrent, Valencia</p>
+        </div>
+        <div>
+          <p class="uppercase tracking-widest mb-4" style="font-size:11px; color:#e3c19f; letter-spacing:0.13em;">Horario</p>
+          <p class="text-on-surface-variant" style="font-size:15px; line-height:1.75;">L–V: 07:00 – 22:00<br/>Sábados: 09:00 – 14:00<br/>Domingos: Cerrado</p>
+        </div>
+      </div>
+
+      <!-- Email + redes -->
+      <div class="flex items-center justify-between mb-8 pb-8" style="border-bottom:1px solid rgba(255,255,255,0.07);">
+        <div>
+          <p class="uppercase tracking-widest mb-4" style="font-size:11px; color:#e3c19f; letter-spacing:0.13em;">Email</p>
+          <a href="mailto:clubherca@gmail.com" class="text-white hover:text-primary transition-colors duration-300" style="font-size:15px;">clubherca@gmail.com</a>
+        </div>
+        <div class="flex gap-2">
+          <a href="https://www.instagram.com/gimnasioherca" target="_blank" rel="noopener"
+             class="w-10 h-10 rounded-full flex items-center justify-center border border-outline-variant hover:border-primary transition-all duration-300"
+             title="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f09433"/>
+                  <stop offset="35%" stop-color="#e6683c"/>
+                  <stop offset="60%" stop-color="#dc2743"/>
+                  <stop offset="80%" stop-color="#cc2366"/>
+                  <stop offset="100%" stop-color="#bc1888"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#ig-grad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/100063821941121/?locale=es_ES" target="_blank" rel="noopener"
+             class="w-10 h-10 rounded-full flex items-center justify-center border border-outline-variant hover:border-primary transition-all duration-300"
+             title="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Teléfono al pie -->
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined" style="font-size:17px; color:rgba(227,193,159,0.45);">phone</span>
+        <a href="tel:+34961553131" class="text-on-surface-variant hover:text-primary transition-colors duration-300" style="font-size:15px; font-family:'Syne',sans-serif; letter-spacing:0.04em;">96 155 31 31</a>
+        <span style="color:rgba(255,255,255,0.2); font-size:13px;">·</span>
+        <span class="text-on-surface-variant" style="font-size:13px;">L–V 07:00–22:00</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+<!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/34620760110" target="_blank" rel="noopener noreferrer"
+   style="position:fixed; bottom:32px; right:32px; z-index:200; width:56px; height:56px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(37,211,102,0.45); transition:transform 0.25s ease, box-shadow 0.25s ease;"
+   onmouseenter="this.style.transform='scale(1.12)'; this.style.boxShadow='0 6px 28px rgba(37,211,102,0.65)';"
+   onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 20px rgba(37,211,102,0.45)';"
+   title="Escríbenos por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- Footer -->
+<footer class="bg-background px-gutter py-6" style="border-top:1px solid rgba(255,255,255,0.07);">
+  <div class="max-w-container-max mx-auto flex justify-between items-center">
+    <span class="text-on-surface-variant" style="font-size:12px;">© 2026 Club Deportivo Herca · Torrent, Valencia</span>
+    <span class="text-on-surface-variant uppercase tracking-widest" style="font-size:10px; color:rgba(227,193,159,0.4);">Desde 1966</span>
+  </div>
+</footer>
+<script>
+// Nav activo según sección visible
+(function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sectionIds = ['historia', 'instalaciones', 'actividades', 'resenas', 'contacto'];
+    const sections = sectionIds.map(id => document.getElementById(id));
+
+    function updateNav() {
+        let active = null;
+        sections.forEach((s, i) => {
+            if (!s) return;
+            const rect = s.getBoundingClientRect();
+            if (rect.top <= 100) active = i;
+        });
+        navLinks.forEach((link, i) => {
+            const isActive = i === active;
+            link.style.color = '#ffffff';
+            link.style.borderBottom = isActive ? '2px solid #e3c19f' : '2px solid transparent';
+        });
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+})();
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const delay = parseInt(entry.target.dataset.delay) || 0;
+            setTimeout(() => entry.target.classList.add('in-view'), delay);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+document.querySelectorAll('.award-card').forEach(card => observer.observe(card));
+
+// Stack de programas: ilumina la tarjeta activa (la más reciente en sticky)
+const stackCards = Array.from(document.querySelectorAll('.stack-card'));
+function updateStack() {
+    let activeCard = null;
+    stackCards.forEach(card => {
+        const stickyTop = parseInt(card.dataset.stickyTop);
+        if (card.getBoundingClientRect().top <= stickyTop + 2) {
+            activeCard = card;
+        }
+    });
+    stackCards.forEach(c => c.classList.toggle('active', c === activeCard));
+}
+window.addEventListener('scroll', updateStack, { passive: true });
+updateStack();
+
+// Marquee arrastrable (galería + reseñas)
+function setupDraggableMarquee(id, speed) {
+    const track = document.getElementById(id);
+    if (!track) return;
+
+    track.style.animation = 'none';
+    track.style.willChange = 'transform';
+
+    const half = track.scrollWidth / 2;
+    let offset = 0;
+    let isDragging = false;
+    let hasDragged = false;
+    let dragStartX = 0;
+    let dragStartOffset = 0;
+    let lastTs = null;
+
+    function tick(ts) {
+        if (lastTs === null) lastTs = ts;
+        const dt = Math.min(ts - lastTs, 50);
+        lastTs = ts;
+        if (!isDragging) offset = (offset + speed * dt / 16) % half;
+        track.style.transform = `translateX(${-offset}px)`;
+        requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+
+    const wrapper = track.parentElement;
+    wrapper.style.cursor = 'grab';
+
+    function dragStart(x) { isDragging = true; hasDragged = false; dragStartX = x; dragStartOffset = offset; wrapper.style.cursor = 'grabbing'; }
+    function dragMove(x) {
+        if (!isDragging) return;
+        if (Math.abs(x - dragStartX) > 5) hasDragged = true;
+        offset = ((dragStartOffset + (dragStartX - x)) % half + half) % half;
+    }
+    function dragEnd() { isDragging = false; wrapper.style.cursor = 'grab'; }
+
+    wrapper.addEventListener('mousedown', e => { dragStart(e.clientX); e.preventDefault(); });
+    document.addEventListener('mousemove', e => dragMove(e.clientX));
+    document.addEventListener('mouseup', dragEnd);
+    // Bloquea el click si hubo arrastre real
+    wrapper.addEventListener('click', e => { if (hasDragged) { e.stopPropagation(); e.preventDefault(); hasDragged = false; } }, true);
+    wrapper.addEventListener('touchstart', e => dragStart(e.touches[0].clientX), { passive: true });
+    document.addEventListener('touchmove', e => { if (isDragging) dragMove(e.touches[0].clientX); }, { passive: true });
+    document.addEventListener('touchend', dragEnd);
+}
+
+setupDraggableMarquee('gallery-track', 0.9);
+setupDraggableMarquee('reviews-track', 0.55);
+
+// Reseñas: hover glow + clic → Google Reviews
+const GOOGLE_REVIEWS_URL = 'https://www.google.com/search?q=Gimnasio+Herca+Reseñas&si=AL3DRZFIhG6pAqfNLal55wUTwygCG0fClF3UxiOmgw9Hq7nbWYsjF9WFmCAqFidkp3fdQniFWiSrmhAF8e90kc54OOXY58ilqZmkjVhKEEIp5tY-pl5azO4YvMjuG_nIfKXlfOYjenEK&hl=es-ES';
+document.querySelectorAll('#resenas .gallery-marquee .flex-shrink-0').forEach(card => {
+    card.classList.add('review-card');
+    card.addEventListener('click', () => {
+        const a = document.createElement('a');
+        a.href = GOOGLE_REVIEWS_URL;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+});
+</script>
+</body></html>
